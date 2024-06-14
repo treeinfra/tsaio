@@ -1,6 +1,6 @@
 import {Config} from "prettier"
 
-type PrettierOptions = Config
+export type PrettierOptions = Config
 
 export interface Options {
   prettier?: PrettierOptions

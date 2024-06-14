@@ -3,7 +3,18 @@
   "description": "TypeScript All in One.",
   "version": "0.0.0",
   "type": "module",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
   "dependencies": {
-    "prettier": "^3.3.2"
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "prettier": "^3.3.2",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2"
   }
 }
