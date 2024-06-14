@@ -6,13 +6,13 @@ import dts from "rollup-plugin-dts"
 
 const outDir = "out"
 const srcDir = "src"
-const libEntry = join(srcDir, "index.ts")
+const input = join(srcDir, "index.ts")
 
 const external = ["node:fs", "node:path"]
 
 const buildLib = defineConfig({
   plugins: [typescript(), terser()],
-  input: libEntry,
+  input,
   external,
   output: [
     {file: join(outDir, "index.js"), format: "esm", sourcemap: true},
@@ -22,7 +22,7 @@ const buildLib = defineConfig({
 
 const buildLibDts = defineConfig({
   plugins: [dts({compilerOptions: {}})],
-  input: libEntry,
+  input,
   external,
   output: {file: join(outDir, "index.d.ts"), format: "esm"},
 })
