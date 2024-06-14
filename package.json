@@ -2,5 +2,8 @@
   "name": "tsaio",
   "description": "TypeScript All in One.",
   "version": "0.0.0",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "prettier": "^3.3.2"
+  }
 }
