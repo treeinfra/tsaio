@@ -6,6 +6,9 @@
   "types": "out/index.d.ts",
   "main": "out/index.cjs",
   "module": "out/index.js",
+  "bin": {
+    "tsaio": "out/main.js"
+  },
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
